@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header starts from here */
+
+#header{
+    background-image: url("./images/background.jpg");
+    width: 100%;
+    height: 65vh;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+    /* background-position: center; */
+}
+
+    /* Header navigation bar starts */
+#navbar{
+    
+    /* position: sticky; */
+    top: 0px;
+    
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+#navbar ul li{
+    margin: 14px 25px;
+    
+    
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color 1s, border-bottom 4s;
+}
+#navbar ul li a:hover{
+    color:bisque;
+    border-bottom: 1px solid bisque;
+}
+
+    /* Header navigation bar ends here... */
+
+    /* Header name heading */
+
+#name{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    margin-top: 40px;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+    /* Header name heading ends here */
+
+    /* Header logo list starts here */
+
+#icons ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+#icons ul li a{
+    margin: 0px 15px;
+}
+
+#icons ul li a i{
+   color:white;
+   font-size: 1.5rem;
+   border-radius: 50%;
+   transition: color 1s;
+}
+#icons ul li:nth-child(1) a i:hover{
+    color: #007bb6;
+}
+#icons ul li:nth-child(2) a i:hover{
+    color: grey;
+}
+#icons ul li:nth-child(3) a i:hover{
+    color: #00aced;
+}
+#icons ul li:nth-child(4) a i:hover{
+    color: #dd4b39;
+}
+#icons ul li:nth-child(5) a i:hover{
+    color: rgb(234, 234, 154);
+}
+
+    /* Header logo ends here */
+/* Header ends here */
+
+/* Main section starts from here  */
+    /* About */
+#about{
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+    height: auto;
+    
+    position: relative;
+}
+#about img{
+    width: 20%;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 6px 4px gray;
+    margin-top: -24vh;
+}
+#about p{
+    margin: 10px auto;
+    display: inline-block;
+    width: 80%;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 8px;
+}
+#skills{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #feb281;
+    
+    
+}
+#skills h2{
+    /* color: darkblue; */
+    font-size: 2rem;
+    padding: 18px;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+#skillsDisplay{
+    width: 70%;
+    margin: 0 auto;
+    height: 200px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#skillsDisplay .skillItems{
+    width: 30%;
+    border: 1px solid black;
+    margin:10px;
+    border-radius: 10px;
+    background-color: #a9704d;
+    
+}
+#skillsDisplay .skillItems .skillItemsPer{
+    
+    background-color: rgb(51, 47, 75);
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1.3rem;
+    color:white;
+}
+#HTMLID{
+    width: 95%;
+}
+#CSS{
+    width: 85%;
+}
+#BootStrap{
+    width: 85%;
+}
+#JavaScript{
+    width: 90%;
+}
+#ReactJs{
+    width: 75%;
+}
+#NodeJs{
+    width: 75%;
+}
+#Java{
+    width: 92%;
+}
+#DSA{
+    width: 70%;
+}
