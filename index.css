@@ -43,20 +43,35 @@ body::before {
 
     /* Header navigation bar starts */
 #navbar{
-    
-    /* position: sticky; */
-    top: 0px;
-    
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg,#050404e6 17% ,#1a0303e6);
+}
+
+#navbar a{
+    width: 15%;
+    position: relative;
+    left: 3%;
+    transform: rotate(-5deg);
+}
+#navbar a img{
+    width: 100%;
 }
 #navbar ul{
     list-style: none;
     display: flex;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     justify-content: center;
     
 }
 #navbar ul li{
+    font-family: 'Josefin Sans', sans-serif;
     margin: 14px 25px;
     
     
@@ -72,6 +87,7 @@ body::before {
     border-bottom: 1px solid bisque;
 }
 
+
     /* Header navigation bar ends here... */
 
     /* Header name heading */
@@ -80,7 +96,7 @@ body::before {
     text-align: center;
     color: white;
     font-size: 4rem;
-    margin-top: 40px;
+    margin-top: 70px;
     letter-spacing: 0.1rem;
     font-weight: 700;
     
@@ -174,10 +190,13 @@ body::before {
     font-size: 1.5rem;
     box-shadow: 8px 8px 6px rgb(204, 96, 63);
 }
-
+.sectionBox > h2{
+    font-family: 'Crimson Text', serif;
+}
 #about > p{
     font-size: 1.5rem;
     text-align: justify;
+    font-family: 'Noto Serif Gujarati', serif;
 }
 
 .fieldSkills{
