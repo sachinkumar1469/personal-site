@@ -5,15 +5,40 @@
 }
 
 /* Header starts from here */
-
-#header{
-    background-image: url("./images/background.jpg");
+body {
+    position: relative;
+    
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+body:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 65vh;
-    background-size: cover;
+    height: 100%;
+    /* opacity: 0.9; */
+    background-image: url(./images/colorful-abstract-nebula-space-background.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.9;
+    /* background-position: 50% 0; */
+    background-size: cover;
+}
+#body-content{
+    position: relative;
+}
+#header{
+    /* background-image: url("./images/background.jpg"); */
+    width: 100%;
+    height: auto;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    /* filter: blur(0px); */
     /* background-position: center; */
+    /* border: 2px solid black; */
 }
 
     /* Header navigation bar starts */
@@ -29,6 +54,7 @@
     color: white;
     font-size: 1.5rem;
     justify-content: center;
+    
 }
 #navbar ul li{
     margin: 14px 25px;
@@ -39,6 +65,7 @@
     text-decoration: none;
     color: white;
     transition: color 1s, border-bottom 4s;
+    
 }
 #navbar ul li a:hover{
     color:bisque;
@@ -56,6 +83,7 @@
     margin-top: 40px;
     letter-spacing: 0.1rem;
     font-weight: 700;
+    
 }
 
     /* Header name heading ends here */
@@ -71,6 +99,7 @@
 }
 #icons ul li a{
     margin: 0px 15px;
+    
 }
 
 #icons ul li a i{
@@ -78,21 +107,27 @@
    font-size: 1.5rem;
    border-radius: 50%;
    transition: color 1s;
+   transition: transform 0.6s ease-out, scale 0.6s ease-in-out;
 }
 #icons ul li:nth-child(1) a i:hover{
     color: #007bb6;
+    transform: scale(1.15);
 }
 #icons ul li:nth-child(2) a i:hover{
     color: grey;
+    transform: scale(1.15);
 }
 #icons ul li:nth-child(3) a i:hover{
     color: #00aced;
+    transform: scale(1.15);
 }
 #icons ul li:nth-child(4) a i:hover{
     color: #dd4b39;
+    transform: scale(1.15);
 }
 #icons ul li:nth-child(5) a i:hover{
     color: rgb(234, 234, 154);
+    transform: scale(1.15);
 }
 
     /* Header logo ends here */
@@ -100,94 +135,157 @@
 
 /* Main section starts from here  */
     /* About */
-#about{
-    width: 100%;
-    text-align: center;
-    background-color: aquamarine;
-    height: auto;
-    
-    position: relative;
+   
+#main{
+    /* background-image: url(./images/wave_bg.jpg);
+    background-repeat: repeat-y;
+    background-size: cover; */
 }
-#about img{
-    width: 20%;
+#aboutImg{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /* background-color: aquamarine; */
+    height: auto;
+    /* border: 2px solid red; */
+    /* position: relative; */
+}
+#aboutImg img{
+    width: 25%;
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: 0px 0px 6px 4px gray;
-    margin-top: -24vh;
+    margin: 20px 0px;
+    transition: transform 0.6s ease-out, scale 0.6s ease-in-out;
+    /* margin-top: -24vh; */
 }
-#about p{
-    margin: 10px auto;
-    display: inline-block;
-    width: 80%;
-    text-align: justify;
+#aboutImg img:hover{
+    transform: scale(1.05);
+}
+.sectionBox{
+    width: 85%;
+    margin: auto;
+    border: 2px solid rgb(164, 56, 149);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    color: white;
+    padding: 30px;
+    background: rgba(112, 92, 255, 0.8);
     font-size: 1.5rem;
-    padding: 8px;
 }
-#skills{
-    height: auto;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #feb281;
-    
-    
+
+#about > p{
+    font-size: 1.5rem;
+    text-align: justify;
 }
-#skills h2{
-    /* color: darkblue; */
-    font-size: 2rem;
-    padding: 18px;
-    text-align: center;
-    letter-spacing: 0.2rem;
-    font-weight: 700;
-}
-#skillsDisplay{
-    width: 70%;
-    margin: 0 auto;
-    height: 200px;
-    /* border: 2px solid black; */
+
+.fieldSkills{
+    margin-top: 0.9rem;
     display: flex;
     flex-wrap: wrap;
-    
+    align-content:space-between;
+    /* border: 2px solid black; */
+    /* border: 2px solid black; */
 }
-#skillsDisplay .skillItems{
-    width: 30%;
-    border: 1px solid black;
-    margin:10px;
-    border-radius: 10px;
-    background-color: #a9704d;
-    
-}
-#skillsDisplay .skillItems .skillItemsPer{
-    
-    background-color: rgb(51, 47, 75);
-    border-radius: 10px;
-    height: 100%;
+.fieldSkills div{
+    width: auto;
+    margin-right: 25px;
+    background-color: whitesmoke;
+    border-radius: 1.5em;
+    text-align: left;
+    /* border: 2px solid red; */
+    /* box-shadow: 0px 0px 4px 6px; */
     display: flex;
-    align-items: center;
-    padding-left: 10px;
-    font-size: 1.3rem;
-    color:white;
+    transition: transform 0.6s ease-out, scale 0.6s ease-in-out;
 }
-#HTMLID{
-    width: 95%;
+.fieldSkills div:hover{
+    transform: scale(1.15);
 }
-#CSS{
-    width: 85%;
+.fieldSkills div img{
+    width: 3.2rem;
+    margin: 0.5px 5px;
 }
-#BootStrap{
-    width: 85%;
+
+#experience{
+    
 }
-#JavaScript{
-    width: 90%;
+.experienceBox{
+    width: 80%;
+    margin-top: 0.9rem;
+    border-radius: 1.5em;
+    height: auto;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    padding: 0.8em;
+    color: black;
+    transition: transform 0.6s ease-out, scale 0.6s ease-in-out;
 }
-#ReactJs{
-    width: 75%;
+#expBox1:hover{
+    transform: translateY(-10px) translateX(5px);
 }
-#NodeJs{
-    width: 75%;
+#expBox2{
+    margin: 0;
 }
-#Java{
-    width: 92%;
+#expBox2:hover{
+    transform: translateY(10px) translateX(5px);
 }
-#DSA{
-    width: 70%;
+.expLogo{
+    width: 20%;
+    /* border: 2px solid black; */
+    
+}
+.companyName{
+    /* margin-top: -16px; */
+    /* border: 2px solid black; */
+}
+.companyName a{
+    text-decoration: none;
+    color: black;
+    /* border: 2px solid black; */
+}
+.expRole{
+    font-size: 1rem;
+}
+.expList{
+    /* list-style: none; */
+    list-style-position: inside;
+}
+.expList li{
+    font-size: 1rem;
+}
+#project{
+
+}
+.projectBox{
+    width: 80%;
+    margin-top: 0.9rem;
+    border-radius: 1.5em;
+    height: auto;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    padding: 0.8em;
+    color: black;
+    transition: transform 0.6s ease-out, scale 0.6s ease-in-out;;
+}
+#proBox1:hover{
+    transform: translateY(-10px) translateX(5px);
+}
+#proBox2{
+    margin: 0;
+}
+#proBox2:hover{
+    transform: translateY(10px) translateX(5px);
+}
+.projectTitle{
+    
+    color: black;
+}
+.aboutProject{
+    font-size: 1rem;
+}
+.projectList {
+    list-style-position: inside;
+}
+.projectList li{
+    font-size: 1rem;
 }
