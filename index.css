@@ -48,12 +48,14 @@ body::before {
     z-index: 20;
     height: 80px;
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(45deg,#050404e6 17% ,#1a0303e6);
 }
 
-#navbar a{
+#navbar > a{
+    /* For logo image */
     width: 15%;
     position: relative;
     left: 3%;
@@ -65,16 +67,16 @@ body::before {
 #navbar ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     color: white;
     font-size: 1.2rem;
-    justify-content: center;
-    
+    justify-content: flex-end;
+    width: 70%;
+    padding-right: 2%;
 }
 #navbar ul li{
     font-family: 'Josefin Sans', sans-serif;
-    margin: 14px 25px;
-    
-    
+    margin-left:4%;
 }
 #navbar ul li a{
     text-decoration: none;
@@ -86,7 +88,6 @@ body::before {
     color:bisque;
     border-bottom: 1px solid bisque;
 }
-
 
     /* Header navigation bar ends here... */
 
@@ -419,3 +420,60 @@ body::before {
     z-index: 2;
 } */
 
+.contactBox{
+    width: 98%;
+    margin-top: 0.9rem;
+    border-radius: 1.5em;
+    height: auto;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    padding: 0.8em;
+    color: black;
+    transition: transform 0.6s ease-out, scale 0.6s ease-in-out;;
+    display: flex;
+    justify-content: space-between;
+}
+.contactBox:hover{
+    transform: translateY(-5px) translateX(5px);
+}
+#contactForm{
+    /* border: 2px solid black; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    justify-content: center;
+}
+.inputFields{
+    height: 15%;
+    margin-bottom: 5%;
+    border: none;
+    border-bottom: 1px solid brown;
+    background-color: inherit;
+    outline: none;
+}
+#contactBtn{
+    width: 50%;
+    align-self: center;
+    height: 13%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin-top: 4%;
+}
+#myInfo{
+    /* border: 2px solid black; */
+    width: 50%;
+    
+    padding: 5%;
+    /* justify-content: center; */
+}
+#myInfo > p{
+    font-size: 1rem;
+    text-align: justify;
+}
+#myInfoAboutP{
+    line-height: 1rem;
+}
