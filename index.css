@@ -243,13 +243,13 @@ body::before {
     transition: transform 0.6s ease-out, scale 0.6s ease-in-out;
 }
 #expBox1:hover{
-    transform: translateY(-10px) translateX(5px);
+    transform: translateY(-5px) translateX(5px);
 }
 #expBox2{
     margin: 0;
 }
 #expBox2:hover{
-    transform: translateY(10px) translateX(5px);
+    transform: translateY(5px) translateX(5px);
 }
 .expLogo{
     width: 20%;
@@ -290,13 +290,13 @@ body::before {
     transition: transform 0.6s ease-out, scale 0.6s ease-in-out;;
 }
 #proBox1:hover{
-    transform: translateY(-10px) translateX(5px);
+    transform: translateY(-5px) translateX(5px);
 }
 #proBox2{
     margin: 0;
 }
 #proBox2:hover{
-    transform: translateY(10px) translateX(5px);
+    transform: translateY(5px) translateX(5px);
 }
 .projectTitle{
     
@@ -356,10 +356,10 @@ body::before {
     margin: 0;
 }
 #eduBox1:hover{
-    transform: translateY(-10px) translateX(5px);
+    transform: translateY(-5px) translateX(5px);
 }
 #eduBox2:hover{
-    transform: translateY(10px) translateX(5px);
+    transform: translateY(5px) translateX(5px);
 }
 .educationContainer{
     /* border: 2px solid black; */
@@ -460,7 +460,7 @@ body::before {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     margin-top: 4%;
 }
 #myInfo{
@@ -469,6 +469,9 @@ body::before {
     
     padding: 5%;
     /* justify-content: center; */
+}
+#myInfo > h4{
+    font-size: 1.3rem;
 }
 #myInfo > p{
     font-size: 1rem;
