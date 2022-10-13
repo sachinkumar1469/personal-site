@@ -7,26 +7,27 @@
 /* Header starts from here */
 body {
     position: relative;
-    
     font-weight: 400;
     line-height: 1.5;
-  }
+}
   
 body::before {
     content: ' ';
     display: block;
     position: absolute;
-    left: 0;
+    left:0;
     top: 0;
     width: 100%;
     height: 100%;
     opacity: 0.9;
+    /* background-color: cyan; */
     background-image: url(./images/colorful-abstract-nebula-space-background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     /* background-position: 50% 0; */
     background-size: cover;
 }
+
 #body-content{
     position: relative;
 }
@@ -88,6 +89,21 @@ body::before {
     color:bisque;
     border-bottom: 1px solid bisque;
 }
+@media screen and (max-width:380px){
+    #navbar{
+        justify-content: space-around;
+    }
+    #navbar > a{
+        /* For logo image */
+        width: 80%;
+        /* justify-content: space-around; */
+        /* border: 2px solid red; */
+        
+    }
+    #navbar ul{
+        display: none;
+    }
+}
 
     /* Header navigation bar ends here... */
 
@@ -101,6 +117,11 @@ body::before {
     letter-spacing: 0.1rem;
     font-weight: 700;
     
+}
+@media screen and (max-width:380px){
+    #name{
+        font-size: 3rem;
+    }
 }
 
     /* Header name heading ends here */
@@ -162,10 +183,7 @@ body::before {
     width: 80%;
     margin: auto;
     text-align: center;
-    /* background-color: aquamarine; */
     height: auto;
-    /* border: 2px solid red; */
-    /* position: relative; */
 }
 #aboutImg img{
     width: 25%;
@@ -174,12 +192,22 @@ body::before {
     box-shadow: 0px 0px 6px 4px gray;
     margin: 20px 0px;
     transition: transform 0.6s ease-out, scale 0.6s ease-in-out;
-    /* margin-top: -24vh; */
+    
 }
 #aboutImg img:hover{
     transform: scale(1.05);
 }
-.sectionBox{
+
+@media screen and (max-width:380px){
+    #aboutImg img{
+        width: 80%;
+    }
+}
+
+
+
+/* header ends --------------------------- */
+ .sectionBox{           /* THIS IS USED TO TARGET THE OUTER MAIN SECTION */
     width: 85%;
     margin: auto;
     border: 2px solid rgb(164, 56, 149);
@@ -190,6 +218,7 @@ body::before {
     background: rgba(112, 92, 255, 0.8);
     font-size: 1.5rem;
     box-shadow: 8px 8px 6px rgb(204, 96, 63);
+    transition: ;
 }
 .sectionBox > h2{
     font-family: 'Crimson Text', serif;
@@ -205,8 +234,6 @@ body::before {
     display: flex;
     flex-wrap: wrap;
     align-content:space-between;
-    /* border: 2px solid black; */
-    /* border: 2px solid black; */
 }
 .fieldSkills div{
     width: auto;
@@ -214,8 +241,6 @@ body::before {
     background-color: whitesmoke;
     border-radius: 1.5em;
     text-align: left;
-    /* border: 2px solid red; */
-    /* box-shadow: 0px 0px 4px 6px; */
     display: flex;
     transition: transform 0.6s ease-out, scale 0.6s ease-in-out;
 }
@@ -226,13 +251,33 @@ body::before {
     width: 3.2rem;
     margin: 0.5px 5px;
 }
-
-#experience{
-    
+@media screen and (max-width:380px){
+    #skills > h2{
+        text-align: center;
+    }
+    #skills h3{
+        text-align: center;
+    }
+    .fieldSkills{
+        padding: 8%;
+        /* background-color: #00aced; */
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #731919;
+        border-radius: 2em;
+        background-color: whitesmoke;
+        box-shadow: 0PX 0PX 9PX #301d1d;
+    }
+    .fieldSkills div{
+        /* background-color: #007bb6; */
+        margin: 5%;
+    }
 }
-.experienceBox{
+
+
+   
+.sectionInnerBox{            /* THIS SECTION BOX IS USED TO TARGET THE DIV INSIDE SECTION'S */
     width: 98%;
-    
     margin-top: 0.9rem;
     border-radius: 1.5em;
     height: auto;
@@ -241,6 +286,12 @@ body::before {
     padding: 0.8em;
     color: black;
     transition: transform 0.6s ease-out, scale 0.6s ease-in-out;
+}
+
+    /* EXPERIENCE SECTION STARTS +++++++++++++++++++++ */
+
+.experienceBox{
+    
 }
 #expBox1:hover{
     transform: translateY(-5px) translateX(5px);
@@ -279,15 +330,7 @@ body::before {
 
 }
 .projectBox{
-    width: 98%;
-    margin-top: 0.9rem;
-    border-radius: 1.5em;
-    height: auto;
-    background-color: whitesmoke;
-    margin-bottom: 20px;
-    padding: 0.8em;
-    color: black;
-    transition: transform 0.6s ease-out, scale 0.6s ease-in-out;;
+    
 }
 #proBox1:hover{
     transform: translateY(-5px) translateX(5px);
@@ -313,44 +356,35 @@ body::before {
 }
 
 
+    /* PROJECT SECTION ENDS HERE -------------------------------- */
 
+                        /* #contact{
+                            color: white;
+                            border: 2px solid red;
+                            display: inline-block;
+                            height: 0px;
+                            width: 0px;
+                            position: fixed;
+                            top: 70px;
+                            right:90px;
+                            overflow: hidden;
+                            transition: width 1s;
+                        }
+                        #contact:target{
+                            position: fixed;
+                            height: auto;
+                            width: 200px;
+                            background-color:rgba(112, 92, 255, 0.8) ;
+                            padding: 10px;
+                            border: 2px solid red;
+                            top: 50%;
+                            left: 50%;
+                        } */
 
-/* #contact{
-    color: white;
-    border: 2px solid red;
-    display: inline-block;
-    height: 0px;
-    width: 0px;
-    position: fixed;
-    top: 70px;
-    right:90px;
-    overflow: hidden;
-    transition: width 1s;
-}
-#contact:target{
-    position: fixed;
-    height: auto;
-    width: 200px;
-    background-color:rgba(112, 92, 255, 0.8) ;
-    padding: 10px;
-    border: 2px solid red;
-    top: 50%;
-    left: 50%;
-} */
+    /* EDUCATION SECTION STARTS +++++++++++++++++++++++ */
 
-#education{
-
-}
 .educationBox{
-    width: 98%;
-    margin-top: 0.9rem;
-    border-radius: 1.5em;
-    height: auto;
-    background-color: whitesmoke;
-    margin-bottom: 20px;
-    padding: 0.8em;
-    color: black;
-    transition: transform 0.6s ease-out, scale 0.6s ease-in-out;;
+    transition: transform 0.6s ease-out, scale 0.6s ease-in-out;
 }
 #eduBox2{
     margin: 0;
@@ -362,7 +396,6 @@ body::before {
     transform: translateY(5px) translateX(5px);
 }
 .educationContainer{
-    /* border: 2px solid black; */
     position: relative;
     height: auto;
 }
@@ -376,7 +409,6 @@ body::before {
     font-size: 1rem;
     text-align: right;
     padding: 3%;
-    /* background-color: rgba(112, 92, 255, 0.8); */
     border-radius: 2em;
     color: #080707;
     font-weight: 700;
@@ -407,29 +439,47 @@ body::before {
     left: 50%;
     left: -50%;
     transform: rotate(90deg);
-}
-/* .timeDot::after{
-    content: ' ';
-    border-radius: 50%;
-    width: 0.6rem;
-    height: 0.6rem;
-    position: absolute;
-    background-color: black;
-    top: 43%;
-    right: -13.9%;
-    z-index: 2;
-} */
 
+}
+@media screen and (max-width:380px) {
+    #line{
+        display: none;
+    }
+    #education > h2{
+        text-align: center;
+        
+    }
+    .eduContBox{
+        /* background-color: cyan; */
+        width: 90%;
+        text-align: center;
+        padding: 5%;
+    }
+    .eduContBox:nth-child(2n){
+        left: 5%;
+        text-align: center;
+        
+        margin-top: 5%;
+        /* box-shadow: 4px 6px 3px #301d1d; */
+    }
+    
+
+}
+    /* EDCATION SECTION ENDS ------------------------------ */
+
+                                            /* .timeDot::after{
+                                                content: ' ';
+                                                border-radius: 50%;
+                                                width: 0.6rem;
+                                                height: 0.6rem;
+                                                position: absolute;
+                                                background-color: black;
+                                                top: 43%;
+                                                right: -13.9%;
+                                                z-index: 2;
+                                            } */
+   /* CONTACT SECTION STARTS ++++++++++++++++++++++++++ */
 .contactBox{
-    width: 98%;
-    margin-top: 0.9rem;
-    border-radius: 1.5em;
-    height: auto;
-    background-color: whitesmoke;
-    margin-bottom: 20px;
-    padding: 0.8em;
-    color: black;
-    transition: transform 0.6s ease-out, scale 0.6s ease-in-out;;
     display: flex;
     justify-content: space-between;
 }
@@ -437,7 +487,6 @@ body::before {
     transform: translateY(-5px) translateX(5px);
 }
 #contactForm{
-    /* border: 2px solid black; */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -464,11 +513,8 @@ body::before {
     margin-top: 4%;
 }
 #myInfo{
-    /* border: 2px solid black; */
     width: 50%;
-    
     padding: 5%;
-    /* justify-content: center; */
 }
 #myInfo > h4{
     font-size: 1.3rem;
@@ -480,3 +526,5 @@ body::before {
 #myInfoAboutP{
     line-height: 1rem;
 }
+
+    /* CONTACT SECTION ENDS ------------------------- */
