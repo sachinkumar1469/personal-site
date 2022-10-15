@@ -70,6 +70,16 @@ body::before {
     width: 100%;
     
 }
+#hamBurgerA{
+    display: none;
+}
+#hamList{
+    display: none;
+    list-style: none;
+
+}
+
+
 #navbar ul{
     list-style: none;
     display: flex;
@@ -94,19 +104,83 @@ body::before {
     color:bisque;
     border-bottom: 1px solid bisque;
 }
-@media screen and (max-width:380px){
+@media screen and (max-width:947px){
     #navbar{
         justify-content: space-around;
+        
     }
     #navbar > a{
         /* For logo image */
-        width: 80%;
+        width: 60%;
+        padding: 10px;
         /* justify-content: space-around; */
         /* border: 2px solid red; */
         
     }
     #navbar ul{
         display: none;
+    }
+    #hamBurgerA{
+        text-decoration: none;
+        width: 20% !important;
+        transition: all 1s ease-in-out;
+    }
+    #hamBurgerA:hover{
+        transform: rotate(180deg);
+    }
+    #hamBurger{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .hamLine{
+        width: 70%;
+        height: 0px;
+        border: 1.5px solid white;
+        margin: 4% 0;
+        
+    }
+    
+    #hamList{
+        display: flex !important;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        position: fixed;
+        z-index: 30;
+        top: 80px;
+        justify-content: center;
+        background: linear-gradient(45deg,#050404e6 17% ,#1a0303e6);
+        right: 0px;
+        
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        transition: all 1s ease-in-out;
+        /* background-color: yellow; */
+    }
+    
+    #hamList:target{
+        width: 100%;
+        height: auto;
+        
+        overflow: hidden;
+    }
+    #hamList> li{
+        /* border: 2px solid red; */
+        margin:3px 4px;
+    }
+    #hamList > li > a{
+        color: white;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: all 1s ease-in-out;
+    }
+    #hamList > li > a:hover{
+        color:bisque;
+        border-bottom: 1px solid bisque;
     }
 }
 
