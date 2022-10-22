@@ -93,6 +93,8 @@ body::before {
 #navbar ul li{
     font-family: 'Josefin Sans', sans-serif;
     margin-left:4%;
+    padding: 0px 0.4%;
+    
 }
 #navbar ul li a{
     text-decoration: none;
@@ -102,7 +104,7 @@ body::before {
 }
 #navbar ul li a:hover{
     color:bisque;
-    border-bottom: 1px solid bisque;
+    /* border-bottom: 1px solid bisque; */
 }
 @media screen and (max-width:947px){
     #navbar{
