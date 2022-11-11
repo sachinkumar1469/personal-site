@@ -199,7 +199,7 @@ body::before {
     font-weight: 700;
     
 }
-@media screen and (max-width:380px){
+@media screen and (max-width:947px){
     #name{
         font-size: 3rem;
     }
@@ -279,7 +279,7 @@ body::before {
     transform: scale(1.05);
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:947px){
     #aboutImg img{
         width: 80%;
     }
@@ -304,7 +304,7 @@ body::before {
 .sectionBox > h2{
     font-family: 'Crimson Text', serif;
 }
-@media screen and (max-width:380px){
+@media screen and (max-width:947px){
     .sectionBox > h2{
         text-align: center;
     }
@@ -338,7 +338,7 @@ body::before {
     width: 3.2rem;
     margin: 0.5px 5px;
 }
-@media screen and (max-width:380px){
+@media screen and (max-width:947px){
     #skills > h2{
         text-align: center;
     }
@@ -417,16 +417,17 @@ body::before {
 
 }
 .projectBox{
-    
+    transition: all 0.8s ease;
 }
 #proBox1:hover{
-    transform: translateY(-5px) translateX(5px);
+    transform: scale(1.01);
 }
 #proBox2{
     margin: 0;
 }
 #proBox2:hover{
-    transform: translateY(5px) translateX(5px);
+    /* transform: translateY(5px) translateX(5px); */
+    transform: scale(1.01);
 }
 .projectTitle{
     
@@ -434,6 +435,22 @@ body::before {
 }
 .aboutProject{
     font-size: 1rem;
+}
+.linkOfProject > a{
+text-decoration: none;
+color: blue;
+font-size: 1rem;
+/* height: 50%; */
+
+
+}
+.imageOfProject{
+    width: 100%;
+   
+}
+.imageOfProject > img{
+    width: 100%;
+    height: 350px;
 }
 .projectList {
     list-style-position: inside;
@@ -528,7 +545,7 @@ body::before {
     transform: rotate(90deg);
 
 }
-@media screen and (max-width:380px) {
+@media screen and (max-width:947px) {
     #line{
         display: none;
     }
@@ -549,6 +566,8 @@ body::before {
         margin-top: 5%;
         /* box-shadow: 4px 6px 3px #301d1d; */
     }
+
+    
     
 
 }
@@ -615,7 +634,7 @@ body::before {
     line-height: 1rem;
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:947px){
     .contactBox{
         flex-direction: column;
         align-items: center;
@@ -650,6 +669,11 @@ body::before {
     #myInfo > h4{
         margin-top: 3%;
         font-size: 1.1rem;
+    }
+    .imageOfProject > img{
+        /* width: 100%; */
+
+        height: 100px;
     }
 }
     /* CONTACT SECTION ENDS ------------------------- */
